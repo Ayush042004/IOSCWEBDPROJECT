@@ -36,8 +36,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #home {
     position: relative;
-    margin-top: 60px; 
+    margin-top: 0; 
     margin-bottom: 50px;
+    padding: 0;
+}
+.image1{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
 }
 
 .header-text {
@@ -54,6 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-container {
     width: 70%;
     margin: auto;
+    overflow: hidden;
 }
 
 #about p {
@@ -78,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .img-container1 img{
+    width: 100%;
     opacity: 0.7;
 }
 
@@ -122,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #contact{
      padding: 70px 20px;
-     margin-bottom: 50%;
+     margin-bottom: 50px;
 }
 
 #contact p{
@@ -136,5 +146,30 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
     padding: 15px;
     margin-bottom: 10px;
+}
+
+button{
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    margin-top: 16px;
+}
+button:hover{
+    color: black;
+    background-color: #9f9b9bfd;
+}
+.color{
+    color: rgb(155,118,255);
+    font-size: 15px;
+}
+footer{
+    padding: 40px;
+    background-color: rgba(128,128,128,0.329);
+    text-align: center;
 }
 
