@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9em;
     color:#333;
 }
-/* hhh*/
+
 .text-container1 p{
     line-height: 1.6rem;
     margin: 10px 0;
@@ -112,10 +112,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 8px;
 }
 
-/*hh9**/
+
 .text-container1 h5 {
     font-size: 1.2em;
-    font-weight: 400; /* Slightly bold but not heavy */
+    font-weight: 400; 
     letter-spacing: 2px;
     text-align: left;
     margin-top: 10px;
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-container1 h1 {
     font-size: 2.5em;
-    font-weight: 500; /* Reduced boldness */
+    font-weight: 500; 
     letter-spacing: 3px;
     text-align: left;
 }
@@ -213,6 +213,62 @@ footer{
     font-style: italic;
     color: #333;
 }
+
+
+/* js */
 html{
     scroll-behavior: smooth;
+}
+
+
+/* responsiveness */
+
+@media (max-width: 768px){
+    .navbar a{
+        font-size: 14px;
+        padding: 8px;
+    }
+    .top-right{
+        float: none;
+        text-align: center;
+    }
+    #about, #menu {
+        flex-direction: column;
+    }
+    .img-container1, .img-container2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .text-container1, .text-container2 {
+        width: 100%;
+    }
+    .section-container {
+        width: 90%;
+    }
+    .text-container1 h1 {
+        font-size: 2em;
+    }
+    .text-container1 h5, .text-container2 h4 {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 12px;
+    }
+    .header-text h1 {
+        font-size: 1.5em;
+        padding: 0 15px;
+    }
+    .text-container1 p, .text-container2 p {
+        font-size: 14px;
+    }
+    #contact input, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    footer p {
+        font-size: 12px;
+    }
 }
