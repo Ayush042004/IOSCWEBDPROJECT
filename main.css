@@ -223,14 +223,14 @@ html{
 
 /* responsiveness */
 
-@media (max-width: 768px){
+/* 1st breakpoint */
+@media (max-width: 992px){
     .navbar a{
-        font-size: 14px;
-        padding: 8px;
+        font-size: 13px;
+        padding: 6px;
     }
-    .top-right{
-        float: none;
-        text-align: center;
+    .section-container{
+        width: 80%;
     }
     #about, #menu {
         flex-direction: column;
@@ -242,24 +242,28 @@ html{
     .text-container1, .text-container2 {
         width: 100%;
     }
+}
+/* 2nd breakpoint */
+@media (max-width: 768px) {
+    .navbar  {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar a{
+        font-size: 12px;
+    }
+    .header-text h1 {
+        font-size: 2em;
+        padding: 0 15px;
+    }
     .section-container {
         width: 90%;
     }
     .text-container1 h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .text-container1 h5, .text-container2 h4 {
-        font-size: 1.1em;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar a {
-        font-size: 12px;
-    }
-    .header-text h1 {
-        font-size: 1.5em;
-        padding: 0 15px;
+        font-size: 1em;
     }
     .text-container1 p, .text-container2 p {
         font-size: 14px;
@@ -271,4 +275,36 @@ html{
     footer p {
         font-size: 12px;
     }
+}
+/* 3rd breakpoint */
+@media (max-width: 480px) {
+
+.top-right a.b2, .top-right a.b3, .top-right a.b4 {
+    display: none;
+}
+
+.navbar a {
+    font-size: 10px;
+}
+
+.header-text h1 {
+    font-size: 1.5em;
+    padding: 0 10px;
+}
+
+#about, #menu, #contact {
+    padding: 20px 10px;
+}
+
+#about p, #menu p, #contact p {
+    font-size: 12px;
+}
+
+.section-container {
+    width: 95%;
+}
+
+footer p {
+    font-size: 10px;
+}
 }
