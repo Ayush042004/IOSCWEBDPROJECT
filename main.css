@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 10px;
+    padding: 6px;
+    margin: 13px;
+    display: inline-block;
+    letter-spacing: 4px;
+}
+
+.top-right {
+    float: right;
+    margin-right: 10px;
+}
+
+#home {
+    position: relative;
+    margin-top: 60px; 
+    margin-bottom: 50px;
+}
+
+.header-text {
+    padding: 12px 24px;
+}
+
+.header-text h1 {
+    position: absolute;
+    bottom: 10px;
+    font-weight: 400;
+    opacity: 0.60;
+}
+
+.section-container {
+    width: 70%;
+    margin: auto;
+}
+
+#about p {
+    font-size: 18px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+#about{
+    padding-top: 70px;
+    margin-bottom: 50px;
+}
+
+.img-container1, .text-container1 {
+    width: 49%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.img-container1 img{
+    opacity: 0.7;
+}
+
+
+.text-container1 h1, .text-container1 h5 {
+    text-align: center;
+}
+
+#about::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.grey-text{
+    color:#757575; 
+}
+
+#menu{
+  padding-top: 70px;
+  margin-bottom: 50px;
+}
+.text-container2{
+    box-sizing: border-box;
+    padding:10px 20px;
+    width: 49%;
+    float: left;
+}
+.text-container2 p {
+    color:#757575;
+    font-size: 16px;
+}
+.img-container2{
+    box-sizing: border-box;
+    padding:10px 20px;
+    width: 49%;
+    float: left;
+}
+#menu::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#contact{
+     padding: 70px 20px;
+     margin-bottom: 50%;
+}
+
+#contact p{
+    font-size: 15px;
+}
+
+#contact input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
